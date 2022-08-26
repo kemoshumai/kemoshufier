@@ -9,7 +9,7 @@ module.exports.MarkovChain = class MarkovChain
     {
         const targets = this.src[current];
         const numberOfTargets = Object.values(targets).reduce((a,b)=>a+b);
-        const targetNumber = Math.floor(Math.random()*numberOfTargets);
+        const targetNumber = Math.floor(Math.random()*numberOfTargets)+1;
         let rest = targetNumber;
         return Object.keys(targets).find(indexName=>{
             rest -= targets[indexName];
