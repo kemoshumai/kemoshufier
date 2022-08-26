@@ -1,0 +1,16 @@
+{
+  "name": "kemoshufier",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "acausal": "^2.0.3",
+    "cheerio": "^1.0.0-rc.12",
+    "kuromoji": "^0.1.2",
+    "twitter-text": "^3.1.0"
+  },
+  "scripts": {
+    "build": "node 01.js & node 02.js & node 03.js",
+    "generate": "node app.js"
+  }
+}
